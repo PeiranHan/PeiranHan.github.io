@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2022 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="高速铁路列车运行晚点系统构建（一：系统框架与设置） TODA(Train Operation Data Analysis)系统 一、系统概况 开发框架：Django Rest Framework（后端）+Vue（前端）+Mysql（数据库） 版本信息：Django4.0&#x2F;Vue3.2.33(Vue&#x2F;cli 5.0.4)&#x2F;Mysql8.0.25 开发环境：Pychar">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+<meta property="og:url" content="http://example.com/2022/04/26/TODA1%E2%80%94%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="高速铁路列车运行晚点系统构建（一：系统框架与设置） TODA(Train Operation Data Analysis)系统 一、系统概况 开发框架：Django Rest Framework（后端）+Vue（前端）+Mysql（数据库） 版本信息：Django4.0&#x2F;Vue3.2.33(Vue&#x2F;cli 5.0.4)&#x2F;Mysql8.0.25 开发环境：Pychar">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/Users/hanpeiran/Library/Application%20Support/typora-user-images/image-20220427213410415.png">
+<meta property="article:published_time" content="2022-04-26T12:24:06.430Z">
+<meta property="article:modified_time" content="2022-08-03T17:04:24.779Z">
 <meta property="article:author" content="PeiranHan">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Users/hanpeiran/Library/Application%20Support/typora-user-images/image-20220427213410415.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,91 +156,200 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-TODA1—后端项目与连接数据库" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="高速铁路列车运行晚点系统构建（一：系统框架与设置）"><a href="#高速铁路列车运行晚点系统构建（一：系统框架与设置）" class="headerlink" title="高速铁路列车运行晚点系统构建（一：系统框架与设置）"></a>高速铁路列车运行晚点系统构建（一：系统框架与设置）</h2><p><font  size=10> TODA(Train Operation Data Analysis)系统</font></p>
+<h2 id="一、系统概况"><a href="#一、系统概况" class="headerlink" title="一、系统概况"></a>一、系统概况</h2><ul>
+<li>开发框架：Django Rest Framework（后端）+Vue（前端）+Mysql（数据库）</li>
+<li>版本信息：Django4.0&#x2F;Vue3.2.33(Vue&#x2F;cli 5.0.4)&#x2F;Mysql8.0.25</li>
+<li>开发环境：Pycharm&#x2F;Vs code&#x2F;Macos</li>
+<li>数据基础：列车运行图实绩数据</li>
+</ul>
+<h2 id="二、框架特点"><a href="#二、框架特点" class="headerlink" title="二、框架特点"></a>二、框架特点</h2><ul>
+<li>数据的读取方法：<strong>ORM （object relational mapping）</strong>——原来的使用底层的 sql 语句，变成面向对象的开发，通过一系列对象的类定义和方法调用就可以操作数据库</li>
+<li>框架信息</li>
+</ul>
+<h2 id="三、主要功能"><a href="#三、主要功能" class="headerlink" title="三、主要功能"></a>三、主要功能</h2><ul>
+<li>列车运行实绩数据上传</li>
+<li>列车运行图主要指标查询</li>
+<li>列车数据查询</li>
+<li>车站数据查询</li>
+<li>晚点指标统计</li>
+<li>冗余时间查询</li>
+<li>作业间隔查询</li>
+<li>相应数据的可视化功能</li>
+<li>机器学习预测晚点</li>
+<li>关键运行线识别</li>
+</ul>
+<h2 id="四、具体实现步骤"><a href="#四、具体实现步骤" class="headerlink" title="四、具体实现步骤"></a>四、具体实现步骤</h2><h3 id="1-创立Django项目"><a href="#1-创立Django项目" class="headerlink" title="1.创立Django项目"></a>1.创立Django项目</h3><h4 id="方法一：cmd命令（win）或终端命令（macos），cd进入要创立的目录后输入（TODA为项目名）"><a href="#方法一：cmd命令（win）或终端命令（macos），cd进入要创立的目录后输入（TODA为项目名）" class="headerlink" title="方法一：cmd命令（win）或终端命令（macos），cd进入要创立的目录后输入（TODA为项目名）"></a>方法一：cmd命令（win）或终端命令（macos），cd进入要创立的目录后输入（TODA为项目名）</h4><p><code> django-admin startproject TODA</code></p>
+<h4 id="方法二：Pycharm创建项目，勾选Django项目，选择对应的虚拟环境（venv）"><a href="#方法二：Pycharm创建项目，勾选Django项目，选择对应的虚拟环境（venv）" class="headerlink" title="方法二：Pycharm创建项目，勾选Django项目，选择对应的虚拟环境（venv）"></a>方法二：Pycharm创建项目，勾选Django项目，选择对应的虚拟环境（venv）</h4><h3 id="2-检查项目是否能够正常运行"><a href="#2-检查项目是否能够正常运行" class="headerlink" title="2.检查项目是否能够正常运行"></a>2.检查项目是否能够正常运行</h3><h4 id="1-在pycharm内的终端输入"><a href="#1-在pycharm内的终端输入" class="headerlink" title="(1)在pycharm内的终端输入"></a>(1)在pycharm内的终端输入</h4><p><code>python manage.py runserver</code></p>
+<h4 id="2-点开终端反馈的链接或直接在浏览器输入第二项，如果能看到绿色小火箭说明项目创立成功，若想要结束进程使用Ctrl-C"><a href="#2-点开终端反馈的链接或直接在浏览器输入第二项，如果能看到绿色小火箭说明项目创立成功，若想要结束进程使用Ctrl-C" class="headerlink" title="(2)点开终端反馈的链接或直接在浏览器输入第二项，如果能看到绿色小火箭说明项目创立成功，若想要结束进程使用Ctrl+C"></a>(2)点开终端反馈的链接或直接在浏览器输入第二项，如果能看到绿色小火箭说明项目创立成功，若想要结束进程使用Ctrl+C</h4><ul>
+<li><p><a target="_blank" rel="noopener" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
+</li>
+<li><p>localhost:8000</p>
+</li>
+</ul>
+<h3 id="3-连接Mysql数据库"><a href="#3-连接Mysql数据库" class="headerlink" title="3.连接Mysql数据库"></a>3.连接Mysql数据库</h3><h4 id="1-修改TODA-x2F-setting-py文件配置数据库基本信息"><a href="#1-修改TODA-x2F-setting-py文件配置数据库基本信息" class="headerlink" title="(1)修改TODA&#x2F;setting.py文件配置数据库基本信息"></a>(1)修改TODA&#x2F;setting.py文件配置数据库基本信息</h4><p>因为django默认的数据库为sqlite3，所以需要先修改“ENGINE”和“NAME”两个内容后自己输入相应的数据库信息，总体结构如下，其中“PASSWORD”是自己数据库对应的密码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">DATABASES = &#123;</span><br><span class="line">    <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;ENGINE&#x27;</span>: <span class="string">&#x27;django.db.backends.mysql&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;NAME&#x27;</span>:  <span class="string">&#x27;京沪运行图数据&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;USER&#x27;</span>: <span class="string">&#x27;root&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;PASSWORD&#x27;</span>: <span class="string">&#x27;hpr03260326&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;HOST&#x27;</span>: <span class="string">&#x27;127.0.0.1&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;PORT&#x27;</span>: <span class="string">&#x27;3306&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-如果提示需要安装对应的包如mysqlclient"><a href="#2-如果提示需要安装对应的包如mysqlclient" class="headerlink" title="(2)如果提示需要安装对应的包如mysqlclient"></a>(2)如果提示需要安装对应的包如mysqlclient</h4><p>在终端<code>pip install mysqlclient</code></p>
+<h4 id="3-在pycharm右侧的数据库中新添数据库"><a href="#3-在pycharm右侧的数据库中新添数据库" class="headerlink" title="(3)在pycharm右侧的数据库中新添数据库"></a>(3)在pycharm右侧的数据库中新添数据库</h4><p>点击“+”号，数据源，Mysql，填写用户，密码，数据库，然后点击测试连接，如果提示安装组件安装即可，注意驱动程序要和Mysql的版本号对应，测试连接成功后点击应用、确定。 </p>
+<h4 id="4-数据迁移引入本地，"><a href="#4-数据迁移引入本地，" class="headerlink" title="(4)数据迁移引入本地，"></a>(4)数据迁移引入本地，</h4><p>在终端<code>python manage.py migrate</code>，顺利后能在数据库表列表中看到以auth和django为前缀的10个表。</p>
+<h3 id="4-创建网站管理员"><a href="#4-创建网站管理员" class="headerlink" title="4.创建网站管理员"></a>4.创建网站管理员</h3><p>终端输入：<code>python manage.py createsuperuser</code>,输入用户名，密码，邮箱。</p>
+<p>进入管理员系统,项目启动的情况下在浏览器输入：<a target="_blank" rel="noopener" href="http://127.0.0.1:8000/admin/">http://127.0.0.1:8000/admin/</a></p>
+<h3 id="5-创建组件"><a href="#5-创建组件" class="headerlink" title="5.创建组件"></a>5.创建组件</h3><p>终端输入：<code>python manage.py startapp Todaweb</code>,Todaweb就是后端组件,输入命令后项目里会多出Todaweb的文件夹</p>
+<h3 id="6-功能配置"><a href="#6-功能配置" class="headerlink" title="6.功能配置"></a>6.功能配置</h3><p>这里就需要在Todaweb&#x2F;model.py下面进行操作，通过ORM的方式创建数据结构，所谓ORM就是用类去对应数据表，用对象去映射数据行，用属性去匹配字段，具体代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Create your models here.</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">operationdata</span>(models.Model):</span><br><span class="line">    <span class="built_in">id</span> = models.IntegerField(default=<span class="number">0</span>, primary_key=<span class="literal">True</span>)  <span class="comment"># 序号</span></span><br><span class="line">    date = models.DateField(null=<span class="literal">True</span>)  <span class="comment"># 日期</span></span><br><span class="line">    trainid = models.CharField(max_length=<span class="number">255</span>, blank=<span class="literal">True</span>, null=<span class="literal">True</span>)  <span class="comment"># 列车车次</span></span><br><span class="line">    ostation = models.CharField(max_length=<span class="number">255</span>, blank=<span class="literal">True</span>, null=<span class="literal">True</span>)  <span class="comment"># 始发站</span></span><br><span class="line">    dstation = models.CharField(max_length=<span class="number">255</span>, blank=<span class="literal">True</span>, null=<span class="literal">True</span>)  <span class="comment"># 终点站</span></span><br><span class="line">    nstation = models.CharField(max_length=<span class="number">255</span>, blank=<span class="literal">True</span>, null=<span class="literal">True</span>)  <span class="comment"># 现在站</span></span><br><span class="line">    arr0 = models.CharField(max_length=<span class="number">255</span>, blank=<span class="literal">True</span>, null=<span class="literal">True</span>)   <span class="comment"># 图定到达</span></span><br><span class="line">    dep0 = models.CharField(max_length=<span class="number">255</span>, blank=<span class="literal">True</span>, null=<span class="literal">True</span>)   <span class="comment"># 图定出发</span></span><br><span class="line">    arr1 = models.CharField(max_length=<span class="number">255</span>, blank=<span class="literal">True</span>, null=<span class="literal">True</span>)  <span class="comment"># 实际到达</span></span><br><span class="line">    dep1 = models.CharField(max_length=<span class="number">255</span>, blank=<span class="literal">True</span>, null=<span class="literal">True</span>)   <span class="comment"># 实际出发</span></span><br><span class="line">    seq = models.IntegerField(default=<span class="number">0</span>)  <span class="comment"># 站序</span></span><br><span class="line">    track = models.IntegerField(default=<span class="number">0</span>)  <span class="comment"># 股道号</span></span><br><span class="line">    arrdelay = models.IntegerField(default=<span class="number">0</span>)  <span class="comment"># 到达晚点</span></span><br><span class="line">    depdelay = models.IntegerField(default=<span class="number">0</span>)  <span class="comment"># 图定晚点</span></span><br><span class="line"><span class="comment"># 这里时间还是字符串格式，需要处理</span></span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">Meta</span>:</span><br><span class="line">        managed = <span class="literal">False</span></span><br><span class="line">        db_table = <span class="string">&#x27;operation_data&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="7-功能注册"><a href="#7-功能注册" class="headerlink" title="7.功能注册"></a>7.功能注册</h3><p>在写完model.py后，我们还需要在根目录Toda的settings.py进行对功能配置进行注册，具体操作是在Installed_app中修改添加代码：<code>Todaweb.apps.TodawebConfig</code>，这里Todaweb对应的是我们在step 5中创立的组件名称。 </p>
+<h3 id="8-功能引入"><a href="#8-功能引入" class="headerlink" title="8.功能引入"></a>8.功能引入</h3><p>终端输入<code>python manage.py makemigrations</code>，成功后Todaweb文件下的migrations文件下会有一个0001_initial.py文件</p>
+<p>再在终端输入<code>python manage.py migrate</code>，成功后终端提示applying 0001_initial…… OK，并且在数据库结构中可以看到。</p>
+<h3 id="9-后端设置"><a href="#9-后端设置" class="headerlink" title="9. 后端设置"></a>9. 后端设置</h3><p>在Todaweb目录下的admin.py中输入代码，整体结构如下：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> .models <span class="keyword">import</span> operationdata</span><br><span class="line"><span class="comment"># Register your models here.</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TodawebAdmin</span>(admin. ModelAdmin):</span><br><span class="line">    list_display = [<span class="string">&quot;id&quot;</span>, <span class="string">&quot;date&quot;</span>, <span class="string">&quot;trainid&quot;</span>, <span class="string">&quot;ostation&quot;</span>, <span class="string">&quot;dstation&quot;</span>,</span><br><span class="line">                    <span class="string">&quot;nstation&quot;</span>, <span class="string">&quot;arr0&quot;</span>, <span class="string">&quot;dep0&quot;</span>, <span class="string">&quot;arr1&quot;</span>, <span class="string">&quot;dep1&quot;</span>, <span class="string">&quot;seq&quot;</span>, <span class="string">&quot;track&quot;</span>, <span class="string">&quot;arrdelay&quot;</span>, <span class="string">&quot;depdelay&quot;</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">admin.site.register(operationdata, TodawebAdmin)</span><br></pre></td></tr></table></figure>
+
+<p>然后再次从终端启动项目<code>python manage.py runserver</code>，进入<a target="_blank" rel="noopener" href="http://127.0.0.1:8000/admin/%E5%90%8E%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E5%A6%82%E4%B8%8B%E7%95%8C%E9%9D%A2%E3%80%82">http://127.0.0.1:8000/admin/后可以看到如下界面。</a></p>
+<img src="/Users/hanpeiran/Library/Application Support/typora-user-images/image-20220427213410415.png" alt="image-20220427213410415" style="zoom:50%;" />
+
+
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此，关于项目建立和结构已经完成，下一阶段是对前端项目的基础设置。 </p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/03/hello-world/" class="archive-article-date">
-  	<time datetime="2022-08-03T13:57:10.587Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/03/hello-world/">Hello World</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/04/26/TODA1%E2%80%94%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/06/09/%E9%AB%98%E9%80%9F%E9%93%81%E8%B7%AF%E5%88%97%E8%BD%A6%E8%BF%90%E8%A1%8C%E6%95%85%E9%9A%9C%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/" class="archive-article-date">
-  	<time datetime="2022-06-08T16:46:59.611Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-09</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/26/TODA1%E2%80%94%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/" class="archive-article-date">
-  	<time datetime="2022-04-26T12:24:06.430Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-26</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2022/06/09/%E9%AB%98%E9%80%9F%E9%93%81%E8%B7%AF%E5%88%97%E8%BD%A6%E8%BF%90%E8%A1%8C%E6%95%85%E9%9A%9C%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -257,8 +372,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
