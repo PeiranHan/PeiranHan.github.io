@@ -46,36 +46,6 @@ education:
       institution: Beijing Jiaotong University
       year: 2017
 
-# Skills
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-skills:
-  - name: Technical
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: python
-        icon_pack: fab
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-line
-        icon_pack: fas
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-hiking
-        icon_pack: fas
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera-retro
-        icon_pack: fas
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -83,22 +53,19 @@ skills:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
-  - icon: twitter
+    link: "mailto:peiranhan@bjtu.edu.cn"
+  - icon: researchgate
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+    link: https://www.researchgate.net/profile/Peiran-Han
+  - icon: whatsapp # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: tel:+8618811443156
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/PeiranHan
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/peiran-han-5654aa2a5/
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
@@ -110,5 +77,5 @@ social:
 highlight_name: true
 ---
 
-Peiran Han is currently a Ph.D. candidate at the School of Traffic and Transportation, Beijing Jiaotong University(BJTU). He holds a Bachelor’s degree (B.E.) and a Master’s degree (M.E.) in Railway Transportation, both obtained from Beijing Jiaotong University, China, in 2017 and 2020, respectively.
+Peiran Han is currently a Ph.D. candidate at the School of Traffic and Transportation, Beijing Jiaotong University(BJTU). From March 2024 to March 2025, He is visiting Chair of Railway Operation, ”Friedrich List” Faculty of Transport and Traffic Sciences, Technische Universit¨at Dresden (TU Dresden).
 {style="text-align: justify;"}
