@@ -3,7 +3,7 @@
 title: 韩霈然
 
 # Name pronunciation (optional)
-name_pronunciation: Pei Ran Han
+name_pronunciation: Han Pei Ran 
 
 # Full name (for SEO)
 first_name: Pei Ran
@@ -29,7 +29,7 @@ bio: My research interests include railway yard operation optimization, train (r
 
 # Interests to show in About widget
 interests:
-  - Railway Yard Operation Optimization
+  - Railroad Yard Operation
   - Train (re)scheduling
   - Timetable Robustness/Resilience
 
@@ -57,9 +57,6 @@ social:
   - icon: researchgate
     icon_pack: fab
     link: https://www.researchgate.net/profile/Peiran-Han
-  - icon: whatsapp # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: tel:+8618811443156
   - icon: github
     icon_pack: fab
     link: https://github.com/PeiranHan
@@ -77,5 +74,5 @@ social:
 highlight_name: true
 ---
 
-Peiran Han is currently a Ph.D. candidate at the School of Traffic and Transportation, Beijing Jiaotong University(BJTU). From March 2024 to March 2025, He is visiting Chair of Railway Operation, ”Friedrich List” Faculty of Transport and Traffic Sciences, Technische Universit¨at Dresden (TU Dresden).
+Peiran Han is currently a Ph.D. candidate at the School of Traffic and Transportation, Beijing Jiaotong University(BJTU). From March 2024 to March 2025, He is visiting Chair of Railway Operation, ”Friedrich List” Faculty of Transport and Traffic Sciences, TU Dresden.
 {style="text-align: justify;"}
