@@ -1,9 +1,7 @@
 ---
 # Display name
-title: 韩霈然
+title: Peiran Han
 
-# Name pronunciation (optional)
-name_pronunciation: Han Pei Ran 
 
 # Full name (for SEO)
 first_name: Pei Ran
@@ -31,7 +29,8 @@ bio: My research interests include railway yard operation optimization, train (r
 interests:
   - Railroad Yard Operation
   - Train (re)scheduling
-  - Timetable Robustness/Resilience
+  - Timetable Robustness
+  - Railway Resilience
 
 # Education to show in About widget
 education:
@@ -39,10 +38,10 @@ education:
     - course: PhD in Transport Planning and Management
       institution: Beijing Jiaotong University
       year: 2021-Now
-    - course: MSc Transport Planning and Management
+    - course: MSc in Transport Planning and Management
       institution: Beijing Jiaotong University
       year: 2020
-    - course: BSc in Railroad Management Engineering
+    - course: BSc in Transportation Management(Railroad)
       institution: Beijing Jiaotong University
       year: 2017
 
@@ -74,5 +73,5 @@ social:
 highlight_name: true
 ---
 
-Peiran Han is currently a Ph.D. candidate at the School of Traffic and Transportation, Beijing Jiaotong University(BJTU). From March 2024 to March 2025, He is visiting Chair of Railway Operation, ”Friedrich List” Faculty of Transport and Traffic Sciences, TU Dresden.
+Peiran Han is currently a Ph.D. candidate at the School of Traffic and Transportation, Beijing Jiaotong University(BJTU). From March 2024 to March 2025, He is visiting [Chair of Railway Operation](https://tu-dresden.de/bu/verkehr/ibv/bahnsysteme), ”Friedrich List” Faculty of Transport and Traffic Sciences, TU Dresden.
 {style="text-align: justify;"}
