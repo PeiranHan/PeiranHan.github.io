@@ -6,12 +6,9 @@ location: Hotel Continental Terme
 address:
   city: Ischia, Italy
 
-summary: A oral presentation in ODS2023(As a contributor)
+summary: A oral presentation in ODS2023
 
-abstract: 'The dwell time of freight trains is usually uncertain, and the bu-reau dispatcher usually has no knowledge of the progress of yard operations until trains are assembled at the departure bowl. The rea-son for this phenomenon is the complexity of yard operations. A valid yard plan pairs all initially parked blocks at the classification bowl, as well as all trains or blocks that arrive during the day, with compatible departures train. Furthermore, a feasible solution must be assigned to operation in conﬂict-free and resources-available manner. 
-In a shunting yard, different types of operations bring changes of the train itself. Furthermore, the movement of trains in different statuses within the yard requires the assistance of shunting engines. Finally, the corresponding locomotive is also required for entering or departing the yard. Therefore, the “multi-state” of train and block in the yard need to be defined.
-In a global network, different types of rail flows move between multiple yards and accomplish status transitions. These rail flows have complex coupling within the yard. To characterize that, we propose a three-layer time-space network to represent adequately consolidation activities proper to railroad transportation, railcars into blocks and blocks into trains, as well as the three types of rail ﬂows movements, namely, railcars, blocks and trains.
-This research can significantly improve the efficiency of rail freight dispatching, collaborative optimize freight operations of node (yard) and edge (mainline) allows for more efficient use of the capac-ity in the global railway network. In specific rail freight facilities, the uncertainty and randomness of operations can be described in more detail, bottlenecks of shunting process, and scarcity of resources can be identified. Micro-operations at the yard can be described in a macro perspective. It will also provide a novel and efﬁcient approach to addressing the consolidation and decomposition nature of railways.'
+abstract: 'In the shunting yard, several kinds of complicated operations occur, resulting in low effectiveness in railcar connection, therefore designing an effective operational research methodology is of profound importance for the shunting yard, the traffic control center, and even the local rail freight network. Focus on the planning level, this paper addresses the problem of integrated train makeup problem and resource scheduling. Besides the operation within the shunting yard, the coordination with the locomotive depot is also in our research scope, to build up a fact-based model. A multi-dimensional knapsack problem is used to address the train makeup problem, while a consistency hybrid flow shop scheduling problem is set up to couple the operation of train, block, and railcar. Based on the nature of the model and the purpose of obtaining convergence faster, we reformulated the integrated problem as a hybrid mixed integer programming and constraint programming model. The method is finally implemented in some small artificial instances and tested on a Chinese shunting yard, demonstrating its effectiveness in practice. '
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -59,7 +56,7 @@ projects:
 ---
 
 <!-- {{% callout note %}}
-Click on the **Slides** button above to view the built-in slides feature.
+My research work is presented by my co-supervisor, Professor Jianrui Miao.
 {{% /callout %}}
 
 Slides can be added in a few ways:
