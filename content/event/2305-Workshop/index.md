@@ -9,7 +9,7 @@ address:
 
 summary: Introduction of project achievement in workshop
 
-abstract: 'This workshop is hosted by Prof. Lingyun Meng, during the visit of Prof. Egidio Quaglietta(TU Delft). I represented our research team and reported on the progress of our study regarding the robustness of scheduling. This primarily included methods for quantifying the robustness of schedules through data mining and simulation, as well as optimization approaches for enhancing robustness.'
+abstract: 'This workshop is hosted by Prof. Lingyun Meng, during the visit of Prof. Egidio Quaglietta(TU Delft). I represented our research team and reported on the progress of our study regarding the robustness of train timetable. This primarily included methods for quantifying the robustness of schedules through data mining and simulation, as well as optimization approaches for enhancing robustness.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
