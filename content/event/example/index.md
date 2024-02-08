@@ -16,7 +16,7 @@ abstract: 'The shunting yards are operated to disassemble and assemble railcars,
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: '2023-04-28T09:00:00Z'
-date_end: '#'
+date_end: #
 all_day: false
 
 # Schedule page publish date (NOT talk date).
