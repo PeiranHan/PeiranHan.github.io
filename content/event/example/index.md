@@ -20,7 +20,7 @@ date_end: '#'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2023-04-28T00:00:00Z'
+publishDate: '2023-04-29T00:00:00Z'
 
 authors: [Peiran Han]
 tags: [Railway Yards]
@@ -28,9 +28,9 @@ tags: [Railway Yards]
 # Is this a featured talk? (true/false)
 featured: false
 
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
-  focal_point: Right
+# image:
+#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+#   focal_point: Right
 
 # links:
 #   - icon: twitter
