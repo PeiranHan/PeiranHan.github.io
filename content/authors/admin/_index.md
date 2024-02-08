@@ -73,5 +73,5 @@ social:
 highlight_name: true
 ---
 
-Peiran Han is currently a Ph.D. candidate at the [School of Traffic and Transportation](http://en.trans.bjtu.edu.cn/index.html), Beijing Jiaotong University(BJTU), Under the supervision of Professor [Lingyun Meng](https://scholar.google.com.hk/citations?hl=zh-CN&user=nrMLNPMAAAAJ&view_op=list_works&sortby=pubdate). From March 2024 to March 2025, He is visiting [Chair of Railway Operation](https://tu-dresden.de/bu/verkehr/ibv/bahnsysteme), ”Friedrich List” Faculty of Transport and Traffic Sciences, TU Dresden, hosted by Professor [Nikola Bešinović](https://scholar.google.com.hk/citations?hl=zh-CN&user=f0Fd-84AAAAJ).
+Peiran Han is currently a Ph.D. candidate at the [School of Traffic and Transportation](http://en.trans.bjtu.edu.cn/index.html), Beijing Jiaotong University(BJTU), under the supervision of Prof. [Lingyun Meng](https://scholar.google.com.hk/citations?hl=zh-CN&user=nrMLNPMAAAAJ&view_op=list_works&sortby=pubdate). From March 2024 to March 2025, He is visiting [Chair of Railway Operation](https://tu-dresden.de/bu/verkehr/ibv/bahnsysteme), ”Friedrich List” Faculty of Transport and Traffic Sciences, TU Dresden, hosted by Prof.[Nikola Bešinović](https://scholar.google.com.hk/citations?hl=zh-CN&user=f0Fd-84AAAAJ).
 {style="text-align: justify;"}
