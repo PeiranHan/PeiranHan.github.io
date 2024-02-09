@@ -2,9 +2,8 @@
 title:  Integrated Train Makeup and Resource Planning in Railroad Shunting Yards
 event: The International Conference on Optimization and Decision Science(ODS2023)
 
-location: Hotel Continental Terme
-address:
-  city: Ischia, Italy
+location: Hotel Continental Terme, Ischia, Italy
+
 
 summary: A oral presentation in ODS2023
 

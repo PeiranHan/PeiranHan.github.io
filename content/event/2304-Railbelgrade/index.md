@@ -4,9 +4,8 @@ title: Optimizing Resource Planning in Shunting Yard with Constraint Programming
 event: 10th International Conference on Railway Operations Modelling and Analysis (RailBelgrade2023)
 event_url: https://railbelgrade2023.sf.bg.ac.rs/
 
-location: University of Belgrade
-address:
-  city: Belgrade, Serbia
+location: University of Belgrade, Belgrade, Serbia
+
 
 summary: A oral presentation in RailBelgrade2023
 

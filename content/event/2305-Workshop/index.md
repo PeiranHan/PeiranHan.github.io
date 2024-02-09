@@ -3,9 +3,7 @@ title: Evaluation and Enhancement of High-Speed Railway Timetable Robustness
 
 event: Workshop on Advanced Train Control and Traffic Management Techniques for Railway Systems
 
-location: Beijing Jiaotong University 
-address:
-  city: Bejing, China
+location: Beijing Jiaotong University, Bejing, China
 
 summary: Introduction of project achievement in workshop
 
