@@ -136,7 +136,7 @@ sections:
       order: desc
     design:
       # Choose a layout view
-      view: showcase
+      view: compact
       columns: '2'
 
   - block: markdown
