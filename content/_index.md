@@ -141,7 +141,7 @@ sections:
 
   - block: markdown
     content:
-      title: Picture Gallery
+      title: Gallery
       subtitle: ''
       text: |-
         {{< gallery album="demo" >}}
