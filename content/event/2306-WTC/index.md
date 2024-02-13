@@ -2,7 +2,7 @@
 title:  Train Timetable Resilience Evaluation Method for High-speed Railway
 event: World Transport Convention(WTC2023)
 
-location: Chine Optics Valley Convention&Exibition Center,Wuhan, Hubei, China
+location: Chine Optics Valley Convention&Exibition Center, Wuhan, Hubei, China
 
 summary: A oral presentation in WTC2023
 
