@@ -18,12 +18,6 @@ date: '2023-07-26T00:00:00Z'
 # url_slides: ''
 # url_video: ''
 
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-# slides: example
----
 
-I am delighted to announce that I have been accepted into the Joint Ph.D. program with funding from the China Scholarship Council (CSC). The visiting institute is the [Chair of Railway Operation](https://tu-dresden.de/bu/verkehr/ibv/bahnsysteme), which belongs to the 'Friedrich List' Faculty of Transport and Traffic Sciences at TU Dresden, under the supervision of Prof. Nikola Bešinović.
+
+I am delighted to announce that I have been accepted into the **Joint Ph.D. program** with funding from the China Scholarship Council (CSC). The visiting institute is the [Chair of Railway Operation](https://tu-dresden.de/bu/verkehr/ibv/bahnsysteme), which belongs to the 'Friedrich List' Faculty of Transport and Traffic Sciences at TU Dresden, under the supervision of Prof. Nikola Bešinović.
