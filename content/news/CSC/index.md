@@ -7,6 +7,8 @@ date: '2023-07-26T00:00:00Z'
 # # Optional external URL for project (replaces project detail page).
 # external_link: ''
 
+# Schedule page publish date (NOT talk date).
+publishDate: '2023-07-26T00:00:00Z'
 
 # links:
 #   - icon: twitter
