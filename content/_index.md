@@ -159,7 +159,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Got something on your mind? I'm just an email away!.
+        Got something on your mind? I'm just an email away!
       # Contact (add or remove contact options as necessary)
       email: peiranhan@bjtu.edu.cn
       phone: +86-18811443156
