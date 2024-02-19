@@ -1,16 +1,17 @@
 ---
-title: '##  Lower Bounds for Hybrid flow shop scheduling problem'
+title: 'Lower Bounds for Hybrid Flow Shop Scheduling Problem'
 date: '2024-02-19'
 ---
 
+## Lower Bounds for Hybrid Flow Shop Scheduling Problem
 
 Assumption:
 - Release time of each job = 0
 - No due date 
-- In each stage, the amount of processing machine is the same, euqal to 2
+- In each stage, the amount of processing machines is the same, equal to 2
 
 ```python
-# we use the data from the reference[1]
+# We use the data from the reference[1]
 job_data = [
     [3, 5, 9],
     [7, 1, 4],
@@ -22,7 +23,7 @@ job_data = [
 
 #### 1. Makespan-Based Lower bound
 The first lower bound is quite simple, which is based on the critical path theory.
-The entire set of jobs can finish no sooner than the total processing time for the longest duration job. Thus, we have the following as a makespan lower bound:
+The entire set of jobs can finish no sooner than the total processing time for the longest-duration job. Thus, we have the following as a makespan lower bound:
 
 ```python
 total_processing_times = [sum(jobs) for jobs in job_data]
@@ -31,7 +32,7 @@ makespan_lowerbound = max(total_processing_times)
 ```
 
 #### 2. Stage-Based Lower bound
-The second lower bound is the stage-based lower bound, it is a concept to derive lower bound from each stage separately with the consideration of the bounds of parallel machines.
+The second lower bound is the stage-based lower bound, it is a concept to derive the lower bound from each stage separately considering the bounds of parallel machines.
 
 ```python
 import math
@@ -52,7 +53,7 @@ list1 = [item[0] for item in job_data]
 list2 = [item[1] for item in job_data]
 list3 = [item[2] for item in job_data]
 
-k=2  # In each stage, we have 2 parallel processing machine.
+k=2  # In each stage, we have 2 parallel processing machines.
 
 # For each stage, we have：
 stage_based_lowerbound1 = math.ceil(stage_lb(list1, list2, list3,k))
