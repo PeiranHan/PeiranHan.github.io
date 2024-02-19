@@ -1,9 +1,9 @@
 ---
 title: 'Lower Bounds for Hybrid Flow Shop Scheduling Problem'
 date: '2024-02-19'
+summary: Some simple LB for HFS
 ---
 
-## Lower Bounds for Hybrid Flow Shop Scheduling Problem
 
 Assumption:
 - Release time of each job = 0
