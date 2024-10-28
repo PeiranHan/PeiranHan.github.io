@@ -43,34 +43,6 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   
-  - block: collection
-    id: posts
-    content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 3
-      # Filter on criteria
-      filters:
-        folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: compact
-      columns: '2'
-
   - block: portfolio
     id: news
     content:
@@ -99,6 +71,33 @@ sections:
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
 
+  - block: collection
+    id: posts
+    content:
+      title: Recent Posts
+      subtitle: ''
+      text: ''
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 3
+      # Filter on criteria
+      filters:
+        folders:
+          - post
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    design:
+      # Choose a layout view
+      view: compact
+      columns: '2'
 
 
   - block: collection
@@ -170,7 +169,7 @@ sections:
         postcode: '01069'
         country: Germany
         country_code: DE
-      directions: Enter Building Gerhart-Potthoff-Bau to Office 108 on Floor 1
+      directions: Enter Building Gerhart-Potthoff-Bau to Office 266A on Floor 2
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
         latitude: '51.030739'
