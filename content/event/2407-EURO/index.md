@@ -5,7 +5,7 @@ event: 33rd European Conference on Operational Research (EURO2024)
 location: Copenhagen, Denmark.
 
 
-summary: A oral presentation in EURO2024
+summary: An oral presentation in EURO2024
 
 abstract: 'The railway system frequently encounters abnormal events such as disturbances and disruptions, highlighting the importance of evaluating the resistance capability of train timetables. However, there is limited research focusing on their boundaries and dynamics. This study contributes to two main aspects: Firstly, to evaluate the functionality of robustness, we construct a delay propagation network to measure several indicators (heterogeneity, slack time, and delay). Based on this methodology, we can clarify the generation and operating mechanism of robustness. Secondly, to quantify the resilience of timetables with different headways, we employ a heuristic approach to obtain saturated timetables, which serve as input for a rescheduling simulation engine. We establish several resilience metrics and utilize Data Envelopment Analysis (DEA) to evaluate the comparative performance of various timetables across different disruption scenarios. Finally, we apply this evaluation framework to the Beijing-Shanghai HSR line. The proposed method provides railway operators with a systematic approach to assess and enhance train timetables, thereby guiding decision-making processes and contributing to the development of more robust and resilient railway operations.'
 

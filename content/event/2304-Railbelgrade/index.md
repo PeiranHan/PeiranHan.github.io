@@ -7,7 +7,7 @@ event_url: https://railbelgrade2023.sf.bg.ac.rs/
 location: University of Belgrade, Belgrade, Serbia
 
 
-summary: A oral presentation in RailBelgrade2023
+summary: An oral presentation in RailBelgrade2023
 
 abstract: 'The shunting yards are operated to disassemble and assemble railcars, which is crucial for freight transportation in the railway network. The efficiency of shunting yards has a profound impact on railway freight service reliability. However, the utilization of resources often becomes the key to restricting the operation efficiency of shunting yards, which is also the main reason for the uncertainty of the yard processing time. To address this challenge, we introduce a hybrid flow shop scheduling problem (HFS) to find optimal schedules for the resource allocation in the yard. To solve, we develop a new constraint programming (CP) model. The performance of the proposed approach has been demonstrated in a Chinese shunting yard. Furthermore, we discuss the benefits of the proposed approach and future directions for extension under the framework of real-time yard resource scheduling.'
 

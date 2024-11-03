@@ -4,7 +4,7 @@ event: World Transport Convention(WTC2023)
 
 location: Chine Optics Valley Convention&Exibition Center, Wuhan, Hubei, China
 
-summary: A oral presentation in WTC2023
+summary: An oral presentation in WTC2023
 
 abstract: 'The internal and external disturbance/disruption can seriously affect on-line performance of train timetable, so quantifying the robustness of timetable has a profound impact on high-speed railway operation. With the concept and its influencing factors, a scenario-based comprehensive evaluation framework, the optimization approach for  timetable structure and slack time is addressed to evaluate and enhance robustness.'
 

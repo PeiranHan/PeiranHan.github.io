@@ -1,11 +1,11 @@
 ---
-title:  Integrated Train Makeup and Resource Planning in Railroad Shunting Yards
+title:  ODS 2023 - Integrated Train Makeup and Resource Planning in Railroad Shunting Yards
 event: The International Conference on Optimization and Decision Science(ODS2023)
 
 location: Hotel Continental Terme, Ischia, Italy
 
 
-summary: A oral presentation in ODS2023
+summary: An oral presentation in ODS2023
 
 abstract: 'In the shunting yard, several kinds of complicated operations occur, resulting in low effectiveness in railcar connection, therefore designing an effective operational research methodology is of profound importance for the shunting yard, the traffic control center, and even the local rail freight network. Focus on the planning level, this paper addresses the problem of integrated train makeup problem and resource scheduling. Besides the operation within the shunting yard, the coordination with the locomotive depot is also in our research scope, to build up a fact-based model. A multi-dimensional knapsack problem is used to address the train makeup problem, while a consistency hybrid flow shop scheduling problem is set up to couple the operation of train, block, and railcar. Based on the nature of the model and the purpose of obtaining convergence faster, we reformulated the integrated problem as a hybrid mixed integer programming and constraint programming model. The method is finally implemented in some small artificial instances and tested on a Chinese shunting yard, demonstrating its effectiveness in practice. '
 
