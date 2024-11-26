@@ -1,5 +1,5 @@
 ---
-title: Two first prize at INFORMS2024 
+title: Two first prize at INFORMS 2024 
 summary: Peiran Han has received 1st prize of RAS in INFORMS 2024
 
 date: '2024-10-22T00:00:00Z'

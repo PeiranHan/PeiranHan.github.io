@@ -23,7 +23,7 @@ organizations:
     url: https://en.bjtu.edu.cn/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include railway yard operation optimization, train (re)scheduling and Timetable robustness/resilience.
+bio: My research interests include railway yard operation optimization, train (re)scheduling and timetable robustness/resilience.
 
 # Interests to show in About widget
 interests:
@@ -35,7 +35,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Transport Planning and Management
+    - course: Ph.D in Transport Planning and Management
       institution: Beijing Jiaotong University
       year: 2021-Now
     - course: MSc in Transport Planning and Management
