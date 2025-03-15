@@ -2,7 +2,7 @@
 title: New officer role
 summary: Peiran Han serves as the 2025 INFORMS RAS PR Officer
 
-date: '2025-02-01T00:00:00Z'
+date: '2025-03-01T00:00:00Z'
 
 # # Optional external URL for project (replaces project detail page).
 # external_link: ''
